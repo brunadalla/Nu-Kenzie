@@ -1,0 +1,21 @@
+.btnsFilter {
+    width: max-content;
+    height: 100%;
+    padding: 10.5px .9375rem;
+    
+    font-size: .875rem;
+    font-weight: 600;
+    
+    color: var(--grey-3);
+    background-color: var(--grey-2);
+}
+
+.btnsFilter:hover {
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.btnsFilter:focus {
+    color: white;
+    background-color: var(--color-primary);
+}

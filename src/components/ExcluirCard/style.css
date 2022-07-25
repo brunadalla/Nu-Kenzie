@@ -1,0 +1,21 @@
+.btnDeletar {
+    width: 22px;
+    height: 22px;
+
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--grey-3);
+    background-color: var(--grey-2);
+}
+
+.btnDeletar:hover {
+    cursor: pointer;
+
+    color: var(--grey-2);
+    background-color: var(--grey-3);
+}
+

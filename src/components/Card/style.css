@@ -1,0 +1,70 @@
+.card_transaction {
+    width: 100%;
+    height: 5.4375rem;
+    min-height: 5.4375rem;;
+    padding-right: .8125rem;
+
+    border-radius: .25rem 0 0 .25rem;
+
+    background-color: var(--grey-1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.colorTag {
+    width: .25rem;
+    height: 100%;
+}
+
+.description_and_type {
+    height: 100%;
+    width: 21.0625rem;
+    padding: .5rem 0 .6875rem .875rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description_and_type h3 {
+    height: 2.4375rem;
+    margin: 0;
+
+    color: var(--grey-4);
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.description_and_type p {
+    height: 1.6875rem;
+    margin: 0;
+
+    color: var(--grey-3);
+    
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.value_and_deleteBtn {
+    width: 13rem;
+    height: 100%;
+    padding: 1.125rem 0 2.9375rem .8125rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.value_and_deleteBtn span {
+    width: 6.375rem;
+
+    text-align: center;
+    
+    color: var(--grey-4);
+    font-size: .75rem;
+    font-weight: 400;
+}
