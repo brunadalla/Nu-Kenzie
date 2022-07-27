@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './style.css'
 
-const Form = ( {listTransactions, setListTransactions} ) => {
+const Form = ( {listTransactions, setListTransactions, newListTransactions, setNewListTransactions} ) => {
 
     const [descriptionInput, setDescriptionInput] = useState('')
     const [valueInput, setValueInput]             = useState('')
@@ -9,6 +9,7 @@ const Form = ( {listTransactions, setListTransactions} ) => {
 
     function handleTransaction(newTransaction) {
         setListTransactions([...listTransactions, newTransaction])
+        setNewListTransactions([...newListTransactions, newTransaction])
     }
 
     return (

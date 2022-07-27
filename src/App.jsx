@@ -62,7 +62,7 @@ function App() {
 
                   <section className='main_form'>
 
-                    <Form listTransactions={listTransactions} setListTransactions={setListTransactions}/>
+                    <Form listTransactions={listTransactions} setListTransactions={setListTransactions} newListTransactions={newListTransactions} setNewListTransactions={setNewListTransactions}/>
 
                     {
                         listTransactions.length !== 0 && <TotalMoney listTransactions={listTransactions}/>
@@ -78,9 +78,9 @@ function App() {
 
                       <div>
 
-                        <Filter type='todos'   filterName='Todos'    listTransactions={listTransactions} setListTransactions={setNewListTransactions}/>
-                        <Filter type='entrada' filterName='Entradas' listTransactions={listTransactions} setListTransactions={setNewListTransactions}/>
-                        <Filter type='saida'   filterName='Despesas' listTransactions={listTransactions} setListTransactions={setNewListTransactions}/>
+                        <Filter type='todos'   filterName='Todos'    listTransactions={listTransactions} setListTransactions={setListTransactions} setNewListTransactions={setNewListTransactions}/>
+                        <Filter type='entrada' filterName='Entradas' listTransactions={listTransactions} setListTransactions={setListTransactions} setNewListTransactions={setNewListTransactions}/>
+                        <Filter type='saida'   filterName='Despesas' listTransactions={listTransactions} setListTransactions={setListTransactions} setNewListTransactions={setNewListTransactions}/>
 
                       </div>
 
@@ -88,8 +88,8 @@ function App() {
 
                     {
 
-                      listTransactions.length !== 0 ? 
-                        <List listTransactions={newListTransactions} setListTransactions={setListTransactions}/>
+                      newListTransactions.length !== 0 ? 
+                        <List listTransactions={listTransactions} setListTransactions={setListTransactions} newListTransactions={newListTransactions} setNewListTransactions={setNewListTransactions}/>
                       :
                         <EmptyList/>
 

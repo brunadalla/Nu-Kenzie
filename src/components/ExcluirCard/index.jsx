@@ -1,13 +1,13 @@
 import { FaTrash } from 'react-icons/fa' 
 import './style.css'
 
-const ExcluirCard = ( {listTransactions, setListTransactions, toDelete} ) => {
+const ExcluirCard = ( {listTransactions, setListTransactions, id} ) => {
 
     function handleDelete(event) {
         event.preventDefault()
 
         const newList       = [...listTransactions]
-        const indexToDelete = newList.indexOf(toDelete)
+        const indexToDelete = newList.indexOf(id)
         
         newList.splice(indexToDelete, 1)
 

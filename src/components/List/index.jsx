@@ -1,19 +1,22 @@
 import Card from "../Card"
 import './style.css'
 
-const List = ( {listTransactions, setListTransactions} ) => {
+const List = ( {listTransactions, setListTransactions, newListTransactions, setNewListTransactions} ) => {
 
     return (
 
         <ul>
 
             {
-                listTransactions.map((transaction) => 
+                newListTransactions.map((transaction, index) => 
                     <Card 
-                    key={transaction}
+                    id={index}
+                    key={index}
                     transaction={transaction} 
                     listTransactions={listTransactions}
                     setListTransactions={setListTransactions}
+                    newListTransactions={newListTransactions} 
+                    setNewListTransactions={setNewListTransactions}
                     />).reverse()
             }
 

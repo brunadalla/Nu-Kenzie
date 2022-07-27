@@ -1,7 +1,7 @@
 import ExcluirCard from "../ExcluirCard"
 import './style.css'
 
-const Card = ( {listTransactions, setListTransactions, transaction} ) => {
+const Card = ( {listTransactions, setListTransactions, transaction, newListTransactions, setNewListTransactions, id} ) => {
 
     const {description, type, value} = transaction
 
@@ -32,7 +32,7 @@ const Card = ( {listTransactions, setListTransactions, transaction} ) => {
                     R$ {value}
                 </span>
 
-                <ExcluirCard  listTransactions={listTransactions} setListTransactions={setListTransactions} toDelete={transaction}/>
+                <ExcluirCard  listTransactions={listTransactions} setListTransactions={setListTransactions} newListTransactions={newListTransactions} id={id}/>
 
             </div>
 
